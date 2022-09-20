@@ -1,0 +1,24 @@
+
+def cal_max(s):
+    bal=0
+    max_bal=0
+    s_len=len(s)
+    for i in range(s_len):
+        if s[i]=='(':
+            bal=bal+1;
+        if s[i]==')':
+            bal=bal-1
+        max_bal=max(max_bal,bal)
+    return max_bal
+
+t=int(input())
+
+for i in range(t):
+    s=input();
+    count=cal_max(s)
+    for i in range(count):
+        print ('(', end="")
+    for j in range(count):
+        print (')',end="")
+    print()
+    

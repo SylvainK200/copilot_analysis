@@ -1,0 +1,11 @@
+x,y = list(map(float, input().split()))
+x = int(x)
+if y-x <0.5:
+    print("%.2f" % y)
+else:
+    if x%5 != 0:
+        print("%.2f" %y)
+    else:
+        y = y-x-0.5
+        print("%.2f" %y) 
+

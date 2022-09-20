@@ -1,0 +1,6 @@
+w, b = list(map(float, input().split()))
+
+if b > w + 0.5 and w%5 == 0:
+    print("%.2f" % (b - w - 0.50))
+else:
+    print(b)
